@@ -1,0 +1,7 @@
+C:\Works\C++_Works\Files\CycleSearcher\CycleSearcher\x64\Debug\CycleSearcher.vcxproj.AssemblyReference.cache
+C:\Works\C++_Works\Files\CycleSearcher\CycleSearcher\x64\Debug\CycleSearcher.vcxproj.SuggestedBindingRedirects.cache
+C:\Works\C++_Works\Files\CycleSearcher\CycleSearcher\x64\Debug\CycleSearcher.CycleSearcher.resources
+C:\Works\C++_Works\Files\CycleSearcher\CycleSearcher\x64\Debug\CycleSearcher.vcxproj.GenerateResource.cache
+C:\Users\sasha\OneDrive\Рабочий стол\CURSEWORK\CycleSearcher\x64\Debug\CycleSearcher.vcxproj.AssemblyReference.cache
+C:\Users\sasha\OneDrive\Рабочий стол\CURSEWORK\CycleSearcher\x64\Debug\CycleSearcher.vcxproj.GenerateResource.cache
+C:\Users\sasha\OneDrive\Рабочий стол\CURSEWORK\CycleSearcher\x64\Debug\CycleSearcher.FordFalersonAlgorithm.resources
