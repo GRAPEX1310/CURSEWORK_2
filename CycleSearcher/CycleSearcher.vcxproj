@@ -26,7 +26,7 @@
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>CycleSearcher</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>FordFalersonAlgorithm</ProjectName>
+    <ProjectName>FordFulkersonAlgorithm</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -123,25 +123,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Cell.cpp" />
-    <ClCompile Include="FordFalersonAlgorithm.cpp" />
+    <ClCompile Include="Vertex.cpp" />
+    <ClCompile Include="FordFulkersonAlgorithm.cpp" />
     <ClCompile Include="Edge.cpp" />
     <ClCompile Include="EdgeList.cpp" />
-    <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="VertexList.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Cell.h" />
-    <ClInclude Include="FordFalersonAlgorithm.h">
+    <ClInclude Include="Vertex.h" />
+    <ClInclude Include="FordFulkersonAlgorithm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
     <ClInclude Include="Edge.h" />
     <ClInclude Include="EdgeList.h" />
     <ClInclude Include="Solver.h" />
-    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="VertexList.h" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="FordFalersonAlgorithm.resx">
-      <DependentUpon>FordFalersonAlgorithm.h</DependentUpon>
+    <EmbeddedResource Include="FordFulkersonAlgorithm.resx">
+      <DependentUpon>FordFulkersonAlgorithm.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

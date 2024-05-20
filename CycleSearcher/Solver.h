@@ -1,5 +1,5 @@
 #pragma once
-#include "Cell.h"
+#include "Vertex.h"
 #include "Edge.h"
 #include <cliext\vector>
 

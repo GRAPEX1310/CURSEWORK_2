@@ -1,10 +1,10 @@
 #pragma once
-#include "LinkedList.h"
+#include "VertexList.h"
 #include "EdgeList.h"
 #include "Solver.h"
 #include <msclr\marshal_cppstd.h>
 
-namespace FordFalersonAlgorithm {
+namespace FordFulkersonAlgorithm {
 
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -15,17 +15,17 @@ namespace FordFalersonAlgorithm {
 	using namespace std;
 
 	/// <summary>
-	/// Сводка для FordFalersonAlgorithm
+	/// Сводка для FordFulkersonAlgorithm
 	/// </summary>
-	public ref class FordFalersonAlgorithm : public System::Windows::Forms::Form
+	public ref class FordFulkersonAlgorithm : public System::Windows::Forms::Form
 	{
 	public:
-		FordFalersonAlgorithm(void)
+		FordFulkersonAlgorithm(void)
 		{
 			InitializeComponent();
 		}
 
-		LinkedList^ vertexList;
+		VertexList^ vertexList;
 		EdgeList^ edgeList;
 		bool isPanelMove;
 		bool makeConnection;
@@ -64,7 +64,7 @@ namespace FordFalersonAlgorithm {
 		/// <summary>
 		/// Освободить все используемые ресурсы.
 		/// </summary>
-		~FordFalersonAlgorithm()
+		~FordFulkersonAlgorithm()
 		{
 			if (components)
 			{
@@ -142,7 +142,7 @@ namespace FordFalersonAlgorithm {
 			this->checkButton->TabIndex = 2;
 			this->checkButton->Text = L"Проверить";
 			this->checkButton->UseVisualStyleBackColor = false;
-			this->checkButton->Click += gcnew System::EventHandler(this, &FordFalersonAlgorithm::checkButton_Click);
+			this->checkButton->Click += gcnew System::EventHandler(this, &FordFulkersonAlgorithm::checkButton_Click);
 			// 
 			// label3
 			// 
@@ -186,7 +186,7 @@ namespace FordFalersonAlgorithm {
 			this->addButton->TabIndex = 6;
 			this->addButton->Text = L"Добавить элемент";
 			this->addButton->UseVisualStyleBackColor = false;
-			this->addButton->Click += gcnew System::EventHandler(this, &FordFalersonAlgorithm::addButton_Click);
+			this->addButton->Click += gcnew System::EventHandler(this, &FordFulkersonAlgorithm::addButton_Click);
 			// 
 			// clearButton
 			// 
@@ -199,7 +199,7 @@ namespace FordFalersonAlgorithm {
 			this->clearButton->TabIndex = 7;
 			this->clearButton->Text = L"Очистить";
 			this->clearButton->UseVisualStyleBackColor = false;
-			this->clearButton->Click += gcnew System::EventHandler(this, &FordFalersonAlgorithm::clearButton_Click);
+			this->clearButton->Click += gcnew System::EventHandler(this, &FordFulkersonAlgorithm::clearButton_Click);
 			// 
 			// lineBox
 			// 
@@ -249,7 +249,7 @@ namespace FordFalersonAlgorithm {
 			this->label5->BackColor = System::Drawing::SystemColors::ControlLight;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label5->Location = System::Drawing::Point(16, 458);
+			this->label5->Location = System::Drawing::Point(44, 458);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(115, 18);
 			this->label5->TabIndex = 12;
@@ -261,7 +261,7 @@ namespace FordFalersonAlgorithm {
 			this->label6->BackColor = System::Drawing::SystemColors::ControlLight;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label6->Location = System::Drawing::Point(219, 458);
+			this->label6->Location = System::Drawing::Point(247, 457);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(107, 18);
 			this->label6->TabIndex = 13;
@@ -271,7 +271,7 @@ namespace FordFalersonAlgorithm {
 			// 
 			this->startVertexTextBox->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
-			this->startVertexTextBox->Location = System::Drawing::Point(137, 455);
+			this->startVertexTextBox->Location = System::Drawing::Point(165, 454);
 			this->startVertexTextBox->Name = L"startVertexTextBox";
 			this->startVertexTextBox->Size = System::Drawing::Size(76, 24);
 			this->startVertexTextBox->TabIndex = 14;
@@ -280,9 +280,9 @@ namespace FordFalersonAlgorithm {
 			// 
 			this->finalVertexTextBox->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 11.25F, System::Drawing::FontStyle::Regular,
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(204)));
-			this->finalVertexTextBox->Location = System::Drawing::Point(332, 455);
+			this->finalVertexTextBox->Location = System::Drawing::Point(356, 455);
 			this->finalVertexTextBox->Name = L"finalVertexTextBox";
-			this->finalVertexTextBox->Size = System::Drawing::Size(84, 24);
+			this->finalVertexTextBox->Size = System::Drawing::Size(76, 24);
 			this->finalVertexTextBox->TabIndex = 15;
 			// 
 			// startEdgeLabel
@@ -338,9 +338,9 @@ namespace FordFalersonAlgorithm {
 			this->applyButton->TabIndex = 20;
 			this->applyButton->Text = L"Применить";
 			this->applyButton->UseVisualStyleBackColor = false;
-			this->applyButton->Click += gcnew System::EventHandler(this, &FordFalersonAlgorithm::applyButton_Click);
+			this->applyButton->Click += gcnew System::EventHandler(this, &FordFulkersonAlgorithm::applyButton_Click);
 			// 
-			// FordFalersonAlgorithm
+			// FordFulkersonAlgorithm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
@@ -366,11 +366,11 @@ namespace FordFalersonAlgorithm {
 			this->Controls->Add(this->label1);
 			this->Controls->Add(this->lineBox);
 			this->KeyPreview = true;
-			this->Name = L"FordFalersonAlgorithm";
+			this->Name = L"FordFulkersonAlgorithm";
 			this->Text = L"FordFulkersonAlgorithm";
-			this->Load += gcnew System::EventHandler(this, &FordFalersonAlgorithm::FFA_Load);
-			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &FordFalersonAlgorithm::FFA_KeyDown);
-			this->KeyUp += gcnew System::Windows::Forms::KeyEventHandler(this, &FordFalersonAlgorithm::FFA_KeyUp);
+			this->Load += gcnew System::EventHandler(this, &FordFulkersonAlgorithm::FFA_Load);
+			this->KeyDown += gcnew System::Windows::Forms::KeyEventHandler(this, &FordFulkersonAlgorithm::FFA_KeyDown);
+			this->KeyUp += gcnew System::Windows::Forms::KeyEventHandler(this, &FordFulkersonAlgorithm::FFA_KeyUp);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->lineBox))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
@@ -396,15 +396,15 @@ private: System::Void addButton_Click(System::Object^ sender, System::EventArgs^
 		activelabel = label;
 		hasActiveLabel = true;
 
-		label->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &FordFalersonAlgorithm::customLabel_MouseDown);
-		label->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &FordFalersonAlgorithm::customLabel_MouseUp);
-		label->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &FordFalersonAlgorithm::customLabel_MouseMove);
+		label->MouseDown += gcnew System::Windows::Forms::MouseEventHandler(this, &FordFulkersonAlgorithm::customLabel_MouseDown);
+		label->MouseUp += gcnew System::Windows::Forms::MouseEventHandler(this, &FordFulkersonAlgorithm::customLabel_MouseUp);
+		label->MouseMove += gcnew System::Windows::Forms::MouseEventHandler(this, &FordFulkersonAlgorithm::customLabel_MouseMove);
 
 		this->Controls->Add(label);
 		label->BringToFront();
 		bringGeneralControllersToFront();
 
-		Cell^ cell = gcnew Cell(vertexList->getSize());
+		Vertex^ cell = gcnew Vertex(vertexList->getSize());
 		cell->setLabel(label);
 
 		this->vertexList->addElem(cell);
@@ -412,7 +412,7 @@ private: System::Void addButton_Click(System::Object^ sender, System::EventArgs^
 
 private: System::Void clearButton_Click(System::Object^ sender, System::EventArgs^ e) {
 	for (int i = 0; i < vertexList->getSize(); i++) {
-		Controls->Remove(vertexList->getCell(i)->label);
+		Controls->Remove(vertexList->getVertex(i)->label);
 	}
 	for (int i = 0; i < edgeList->getSize(); i++) {
 		Controls->Remove(edgeList->getEdge(i)->label);
@@ -425,7 +425,7 @@ private: System::Void clearButton_Click(System::Object^ sender, System::EventArg
 }
 
 private: System::Void checkButton_Click(System::Object^ sender, System::EventArgs^ e) {
-	if (vertexList->getSize() == 0) {
+	if (vertexList->getSize() == 0 || endEdgeLabel->Text->Length == 0 || endEdgeLabel->Text->Length == 0) {
 		answerLabel->Text = "-";
 		answerLabel->ForeColor = Color::Black;
 		return;
@@ -439,7 +439,13 @@ private: System::Void checkButton_Click(System::Object^ sender, System::EventArg
 
 	int start = stoi(msclr::interop::marshal_as<std::string>(startVertexTextBox->Text));
 	int end = stoi(msclr::interop::marshal_as<std::string>(finalVertexTextBox->Text));
-
+	for (int i = 0; i < edgeList->getSize(); i++) {
+		if (edgeList->getEdge(i)->weight == -1) {
+			answerLabel->Text = "-";
+			answerLabel->ForeColor = Color::Black;
+			return;
+		}
+	}
 	Solver^ solver = gcnew Solver();
 	int result = solver->solve(start, end, vertexList->getSize(), edgeList->getSize(), edgeList->getList());
 
@@ -481,7 +487,7 @@ private: System::Void customLabel_MouseUp(System::Object^ sender, System::Window
 private: System::Void customLabel_MouseMove(System::Object^ sender, System::Windows::Forms::MouseEventArgs^ e) {
 	if (isPanelMove) {
 		Label^ label = (Label^)sender;
-		Cell^ cell = vertexList->getCell(stoi(msclr::interop::marshal_as<std::string>(label->Text)));
+		Vertex^ cell = vertexList->getVertex(stoi(msclr::interop::marshal_as<std::string>(label->Text)));
 
 		label->Top = label->Top + (e->Y - mousePoint.Y);
 		label->Left = label->Left + (e->X - mousePoint.X);
@@ -493,7 +499,7 @@ private: System::Void customLabel_MouseMove(System::Object^ sender, System::Wind
 private: System::Void FFA_Load(System::Object^ sender, System::EventArgs^ e) {
 	hasActiveLabel = false;
 	makeConnection = false;
-	vertexList = gcnew LinkedList();
+	vertexList = gcnew VertexList();
 	edgeList = gcnew EdgeList();
 	g = lineBox->CreateGraphics();
 }
@@ -502,10 +508,17 @@ private: System::Void FFA_KeyDown(System::Object^ sender, System::Windows::Forms
 	if (e->KeyCode == Keys::Delete && hasActiveLabel) {
 		int num = stoi(msclr::interop::marshal_as<std::string>(activelabel->Text));
 
-		Cell^ cell = vertexList->getCell(num);
+		Vertex^ cell = vertexList->getVertex(num);
 
 		for (int i = 0; i < vertexList->getSize(); i++) {
-			Cell^ currentCell = vertexList->getCell(i);
+			Vertex^ currentCell = vertexList->getVertex(i);
+
+			for (int j = 0; j < currentCell->adjacent.size(); i++) {
+				auto edge = currentCell->adjacent[j];
+				if (edge->start == num || edge->end == num) {
+					currentCell->adjacent.erase(currentCell->adjacent.begin() + j);
+				}
+			}
 
 			if (currentCell->hasNext && currentCell->getNext()->Equals(cell)) {
 				currentCell->hasNext = false;
@@ -513,12 +526,18 @@ private: System::Void FFA_KeyDown(System::Object^ sender, System::Windows::Forms
 		}
 
 		if (cell->hasNext) {
-			Cell^ nextCell = cell->getNext();
+			Vertex^ nextCell = cell->getNext();
 
 			nextCell->hasPrev = false;
 		}
 
 		vertexList->eraseElem(num);
+		for (int i = 0; i < edgeList->getSize(); i++) {
+			auto curr = edgeList->getEdge(i);
+			if (curr->start == num || curr->end == num) {
+				edgeList->eraseElem(i);
+			}
+		}
 
 		Controls->Remove(activelabel);
 
@@ -553,6 +572,7 @@ private: void bringGeneralControllersToFront() {
 	weightLabel->BringToFront();
 	startEdgeLabel->BringToFront();
 	endEdgeLabel->BringToFront();
+	shiftLabel->BringToFront();
 
 	//textBoxes
 	weightTextBox->BringToFront();
@@ -568,7 +588,7 @@ private: void bringGeneralControllersToFront() {
 	checkButton->BringToFront();
 }
 
-private: void drawWeight(Cell^ start, Cell^ end, int value) {
+private: void drawWeight(Vertex^ start, Vertex^ end, int value) {
 	int coordX = (start->label->Location.X + end->label->Location.X) / 2;
 	int coordY = (start->label->Location.Y + end->label->Location.Y) / 2;
 
@@ -597,8 +617,8 @@ private: void drawWeight(Cell^ start, Cell^ end, int value) {
 	edge->setLabel(label);
 
 	for (int i = 0; i < vertexList->getSize(); i++) {
-		if (edge->start == vertexList->getCell(i)->getId() || edge->end == vertexList->getCell(i)->getId()) {
-			auto vertex = vertexList->getCell(i);
+		if (edge->start == vertexList->getVertex(i)->getId() || edge->end == vertexList->getVertex(i)->getId()) {
+			auto vertex = vertexList->getVertex(i);
 			vertex->adjacent.push_back(edge);
 		}
 	}
@@ -613,21 +633,21 @@ private: void addLine(Label^ endLabel) {
 	int numActive = stoi(msclr::interop::marshal_as<std::string>(activelabel->Text));
 	int numNext = stoi(msclr::interop::marshal_as<std::string>(endLabel->Text));
 	//обновляем списки
-	vertexList->getCell(numActive)->nextLabel = endLabel;
+	vertexList->getVertex(numActive)->nextLabel = endLabel;
 
 	
-	auto active = vertexList->getCell(numActive);
-	active->setNext(vertexList->getCell(numNext));
+	auto active = vertexList->getVertex(numActive);
+	active->setNext(vertexList->getVertex(numNext));
 	active->hasNext = true;
 
-	auto next = vertexList->getCell(numNext);
-	next->setPrev(vertexList->getCell(numActive));
+	auto next = vertexList->getVertex(numNext);
+	next->setPrev(vertexList->getVertex(numActive));
 	next->hasPrev = true;
 
-	drawWeight(vertexList->getCell(numActive), vertexList->getCell(numActive)->getNext(), -1);
+	drawWeight(vertexList->getVertex(numActive), vertexList->getVertex(numActive)->getNext(), -1);
 }
 
-private: void reDraw(bool reDrawCycle) {
+private: void reDraw(bool reDrawEdge) {
 
 	g->Clear(System::Drawing::SystemColors::Control);
 	Pen^ pen = gcnew Pen(Color::Black);
@@ -635,67 +655,27 @@ private: void reDraw(bool reDrawCycle) {
 	Pen^ specialPen = gcnew Pen(Color::Red);
 
 	for (int i = 0; i < vertexList->getSize(); i++) {
-		Cell^ cell = vertexList->getCell(i);
+		Vertex^ cell = vertexList->getVertex(i);
 		if (cell->hasNext) {
-			/*
-			if (cell->intoCycle) {
-				g->DrawLine(specialPen,
-					Point(cell->label->Location.X + 20, cell->label->Location.Y + 20),
-					Point(cell->nextLabel->Location.X + 20, cell->nextLabel->Location.Y + 20));
-			}
-			else {
-				
-			}
-			*/
-			
 			for (int j = 0; j < cell->adjacent.size(); j++) {
 				auto edge = cell->adjacent[j];
-				Cell^ nextCell;
+				Vertex^ nextCell;
 				if (cell->getId() == edge->start) {
-					nextCell = vertexList->getCell(edge->end);
+					nextCell = vertexList->getVertex(edge->end);
 				}
 				else if (cell->getId() == edge->end) {
-					nextCell = vertexList->getCell(edge->start);
+					nextCell = vertexList->getVertex(edge->start);
 				}
 
 				g->DrawLine(pen,
 					Point(cell->label->Location.X + 20, cell->label->Location.Y + 20),
 					Point(nextCell->label->Location.X + 20, nextCell->label->Location.Y + 20));
-				/*
-				int ellipsX = (cell->label->Location.X + nextCell->label->Location.X) / 2;
-				int ellipsY = (cell->label->Location.Y + nextCell->label->Location.Y) / 2;
-
-				ellipsX += (int)(nextCell->label->Location.X / 3);
-				ellipsY += (int)(nextCell->label->Location.Y / 3);
-
-				g->DrawEllipse(pen, ellipsX, ellipsY - 20, 10, 10);
-				*/
 
 				int coordX = (cell->label->Location.X + nextCell->label->Location.X) / 2;
 				int coordY = (cell->label->Location.Y + nextCell->label->Location.Y) / 2;
 				edge->label->Top = coordY;
 				edge->label->Left = coordX;
 			}
-			
-
-			/*
-			bool f = false;
-			int i = 0;
-			Edge^ res;
-			while (!f && i < edgeList->getSize()) {
-				res = edgeList->getEdge(i);
-				if (res->start == cell->getId() && res->end == cell->getNext()->getId()) {
-					f = true;
-				}
-				i++;
-			}
-
-			int coordX = (cell->label->Location.X + cell->nextLabel->Location.X) / 2;
-			int coordY = (cell->label->Location.Y + cell->nextLabel->Location.Y) / 2;
-
-			res->label->Top = coordY;
-			res->label->Left = coordX;
-			*/
 		}
 	}
 }
@@ -721,7 +701,7 @@ private: System::Void applyButton_Click(System::Object^ sender, System::EventArg
 	}
 
 	for (int i = 0; i < vertexList->getSize(); i++) {
-		auto current = vertexList->getCell(i);
+		auto current = vertexList->getVertex(i);
 		for (int j = 0; j < current->adjacent.size(); j++) {
 			auto edge = current->adjacent[j];
 
@@ -731,8 +711,6 @@ private: System::Void applyButton_Click(System::Object^ sender, System::EventArg
 			}
 		}
 	}
-	int a;
 }
-
 };
 }

@@ -1,19 +1,19 @@
 #pragma once
-#include "Cell.h"
+#include "Vertex.h"
 #include <cliext\vector>
 
 using namespace std;
 
-ref class LinkedList {
+ref class VertexList {
 private:
-	cliext::vector<Cell^> cells;
+	cliext::vector<Vertex^> vertices;
 protected:
 public:
-	LinkedList();
-	void addElem(Cell^);
+	VertexList();
+	void addElem(Vertex^);
 	void eraseElem(long long);
 	void clear();
 	int getSize();
 	void renumerate();
-	Cell^ getCell(long long);
+	Vertex^ getVertex(long long);
 };

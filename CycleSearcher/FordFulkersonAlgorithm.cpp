@@ -1,4 +1,4 @@
-#include "FordFalersonAlgorithm.h"
+#include "FordFulkersonAlgorithm.h"
 
 using namespace System;
 
@@ -12,7 +12,7 @@ void Main(cli::array<String^>^ args) {
 
 	Application::SetCompatibleTextRenderingDefault(false);
 
-	FordFalersonAlgorithm::FordFalersonAlgorithm MyForm;
+	FordFulkersonAlgorithm::FordFulkersonAlgorithm MyForm;
 
 	Application::Run(% MyForm);
 

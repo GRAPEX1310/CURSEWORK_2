@@ -4,30 +4,29 @@
 #include "list"
 
 
-ref class Cell {
+ref class Vertex {
 private:
 	long long id;
-	Cell^ next;
-	Cell^ prev;
+	Vertex^ next;
+	Vertex^ prev;
 protected:
 public:
 	cliext::vector<Edge^> adjacent; // список инцидентности
 	bool hasNext;
 	bool hasPrev;
-	bool intoCycle;
 	System::Windows::Forms::Label^ nextLabel;
 	System::Windows::Forms::Label^ label;
 
-	Cell();
-	Cell(long long);
-	void setNext(Cell^);
+	Vertex();
+	Vertex(long long);
+	void setNext(Vertex^);
 	void setLabel(System::Windows::Forms::Label^);
 	void setId(long long);
 	long long getId();
-	Cell^ getNext();
-	void setPrev(Cell^);
-	Cell^ getPrev();
-	~Cell();
+	Vertex^ getNext();
+	void setPrev(Vertex^);
+	Vertex^ getPrev();
+	~Vertex();
 	void setEdge(Edge^ edge);
 	void removeEdge(Edge^ edge);
 };

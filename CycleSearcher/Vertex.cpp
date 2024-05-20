@@ -1,51 +1,49 @@
-#include "Cell.h"
-#include "FordFalersonAlgorithm.h"
+#include "Vertex.h"
+#include "FordFulkersonAlgorithm.h"
 
-Cell::Cell() {
+Vertex::Vertex() {
 	this->id = -1;
 	hasNext = false;
 	hasPrev = false;
-	intoCycle = false;
 }
 
-Cell::Cell(long long id) {
+Vertex::Vertex(long long id) {
 	this->id = id;
 	hasNext = false;
 	hasPrev = false;
-	intoCycle = false;
 }
 
-void Cell::setLabel(System::Windows::Forms::Label^ label) {
+void Vertex::setLabel(System::Windows::Forms::Label^ label) {
 	this->label = label;
 }
 
-void Cell::setNext(Cell^ next) {
+void Vertex::setNext(Vertex^ next) {
 	this->next = next;
 }
 
-void Cell::setId(long long id) {
+void Vertex::setId(long long id) {
 	this->id = id;
 	this->label->Text = id.ToString();
 }
 
-long long Cell::getId() {
+long long Vertex::getId() {
 	return id;
 }
 
-Cell^ Cell::getNext() {
+Vertex^ Vertex::getNext() {
 	return next;
 }
 
-Cell::~Cell() {
+Vertex::~Vertex() {
 	delete next;
 }
 
-void Cell::setEdge(Edge^ edge)
+void Vertex::setEdge(Edge^ edge)
 {
 	adjacent.push_back(edge);
 }
 
-void Cell::removeEdge(Edge^ edge)
+void Vertex::removeEdge(Edge^ edge)
 {
 	for (int i = 0; i < adjacent.size(); i++) {
 		auto current = adjacent[i];
@@ -56,10 +54,10 @@ void Cell::removeEdge(Edge^ edge)
 	}
 }
 
-void Cell::setPrev(Cell^ prev) {
+void Vertex::setPrev(Vertex^ prev) {
 	this->prev = prev;
 }
 
-Cell^ Cell::getPrev() {
+Vertex^ Vertex::getPrev() {
 	return prev;
 }

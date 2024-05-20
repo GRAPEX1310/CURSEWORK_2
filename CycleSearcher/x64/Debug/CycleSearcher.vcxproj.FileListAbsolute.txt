@@ -4,4 +4,4 @@ C:\Works\C++_Works\Files\CycleSearcher\CycleSearcher\x64\Debug\CycleSearcher.Cyc
 C:\Works\C++_Works\Files\CycleSearcher\CycleSearcher\x64\Debug\CycleSearcher.vcxproj.GenerateResource.cache
 C:\Users\sasha\OneDrive\Рабочий стол\CURSEWORK\CycleSearcher\x64\Debug\CycleSearcher.vcxproj.AssemblyReference.cache
 C:\Users\sasha\OneDrive\Рабочий стол\CURSEWORK\CycleSearcher\x64\Debug\CycleSearcher.vcxproj.GenerateResource.cache
-C:\Users\sasha\OneDrive\Рабочий стол\CURSEWORK\CycleSearcher\x64\Debug\CycleSearcher.FordFalersonAlgorithm.resources
+C:\Users\sasha\OneDrive\Рабочий стол\CURSEWORK\CycleSearcher\x64\Debug\CycleSearcher.FordFulkersonAlgorithm.resources
